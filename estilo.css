@@ -212,8 +212,9 @@ body{
 
 /*FIN estructura del FOOTER*/
 
-/*Main del libro Harry Potter*/
 
+
+/*Main del libro Harry Potter*/
 .potter-conteiner{
     display: grid;
     grid-template-areas: 
@@ -226,26 +227,26 @@ body{
     
 }
 
-
-
+/*Area de la imagen del libro*/
 .grid-imag{
+    grid-area: imag;
     display: flex;
     justify-content: end;
-    grid-area: imag;
     padding: 10px;
-    
-    
 }
 
 .grid-imag img{
     border: 1px solid grey;
     transition: all .5s;
+    overflow: auto;
 }
 
 .grid-imag img:hover{
     transform:rotate(360deg)
 }
+/*FIN area de la imagen del libro*/
 
+/*area de la lista de informacion*/
 .grid-text{
     grid-area: txt;
 }
@@ -268,9 +269,10 @@ body{
     margin-left: 50px;
     
 }
+/*FIN area de la lista de informacion*/
 
 
-
+/*area de la reseña del libro*/
 .grid-inf{
     grid-area: inf; 
     overflow-x: auto;
@@ -286,7 +288,9 @@ body{
     background-color: rgb(17, 15, 48);
     padding-left: 30px;
 }
+/* FIN area de la reseña del libro*/
 
+/*FIN Main del libro Harry Potter*/
 
 
 
@@ -498,6 +502,4 @@ body{
     }
 
     /*FIN estructura del FOOTER*/
-}
-
 
