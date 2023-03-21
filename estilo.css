@@ -1,0 +1,503 @@
+/*Estilo del body*/
+body{
+    margin: 0;
+    background-image: url(https://i.pinimg.com/originals/97/57/93/975793fff4eb682dcc396c2885a13f2f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+
+
+
+/*Estilo y estructura del contenedor GRID */
+.grid-conteiner{
+    display: grid;
+   grid-template-areas: 
+   "header header"
+   "nav main"
+   "nav main"
+   "nav main"
+   "footer footer";
+    grid-template-columns: 200px 1fr ;
+    grid-template-rows: 100px 1fr 1fr 1fr 50px;
+    height: 100vh;
+}
+
+/*Borde de las secciones GRID*/
+.grid-item{
+    border: 1.5px solid black;   
+}
+
+/* Estilo y estructura del HEADER*/
+.grid-header{
+    grid-area: header; 
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(17, 15, 48);
+    gap: 5em;
+    padding: 5px;
+     
+}
+
+/* Estilo del LOGO*/
+ .grid-header img{
+    height: 90%;
+    border-radius: 100px;
+    padding: 3px;
+    background-color: rgb(167, 163, 163);
+
+ }
+
+/* Estilo de la barra de busqueda*/
+ .grid-header input{
+     width: 1000px;
+     height: 30%;
+     border: 3px solid rgb(95, 98, 99);
+     border-radius: 15px;
+     margin: 5px;
+     padding-left: 30px;
+     font-family: 'monserrat', sans-serif;
+     font-weight: 700;
+     
+
+ }
+
+/* Estilo de "mi perfil", "mi lista" y "carrito"*/
+.grid-item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: whitesmoke;
+    text-decoration: none;
+    
+    text-shadow: 0px 10px 15px rgb(30, 7, 241);
+}
+
+/*Estilo de los iconos de "mi perfil", "mi lista" y "carrito"*/
+.grid-item a span{
+    padding: 10px;
+}
+/*FIN de estilo y estructura del HEADER*/
+
+
+
+
+/*Estilo y estructura del NAV*/
+.grid-nav{
+    grid-area: nav;
+    background-color: rgb(17, 15, 48) ;
+}
+
+/*Estilo del H3 "Categorias"*/
+.grid-nav h3{
+    
+    color: rgb(235, 226, 226);
+    text-align: center;
+    font-size:xx-large;
+    font-weight: 700;
+    background-color: rgb(17, 15, 48);
+    margin: 0px;
+}
+
+/*Estilo de la lista desordenada*/
+.grid-nav ul{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(235, 226, 226);
+    font-size: 1em;
+    height: 90%;
+}
+
+/*Estilo de los elementos de la lista desordenada*/
+.grid-nav li{
+    list-style: none;
+}
+
+/*Estilo de los iconos*/
+.grid-nav span{
+    margin: 4px;
+}
+
+/*Colores de los iconos*/
+.icon-binoculars{
+    color: green;
+}
+.icon-target{
+    color: orange;
+}
+.icon-fire{
+    color: orangered;
+}
+.icon-eye{
+    color: blue;
+}
+.icon-rocket{
+    color: aqua;
+}
+.icon-heart-broken{
+    color: red;
+}
+.icon-evil2{
+    color: violet;
+}
+
+/*FIN estilo y estructura del NAV*/
+
+/*Estilo y elementos del MAIN*/
+.grid-main{
+    grid-area: main;
+    overflow: auto;
+    
+}
+
+/*Estilo de los libros*/
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    
+}
+
+ /*Tamaño, borde y transicion de los libros*/
+.grid-main img{
+    height: 300px;
+    width: 200px;
+    border: 1px solid grey;
+    transition: all .5s;
+}
+
+/*Trasform de los libros*/
+.images__imagen:hover{
+    transform: scale(1.1);
+}
+/*Fin estilos y elementos del MAIN*/
+
+
+
+/*Estructura del FOOTER*/
+.grid-footer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20em;
+    grid-area: footer;
+    background-color: rgb(17, 15, 48);
+}
+
+/*Colores de los iconos*/
+.icon-facebook {
+    color:blue
+}
+
+.icon-instagram{
+    color: rgb(177, 52, 14);
+}
+
+.icon-whatsapp{
+    color: green;
+}
+
+/*FIN estructura del FOOTER*/
+
+/*Main del libro Harry Potter*/
+
+.potter-conteiner{
+    display: grid;
+    grid-template-areas: 
+    "imag txt txt"
+    "imag txt txt"
+    "inf inf inf";
+    grid-auto-columns: 42% 1fr 1fr;
+    grid-auto-rows: 350px 350px 350px;
+    margin: 0px;
+    
+}
+
+
+
+.grid-imag{
+    display: flex;
+    justify-content: end;
+    grid-area: imag;
+    padding: 10px;
+    
+    
+}
+
+.grid-imag img{
+    border: 1px solid grey;
+    transition: all .5s;
+}
+
+.grid-imag img:hover{
+    transform:rotate(360deg)
+}
+
+.grid-text{
+    grid-area: txt;
+}
+
+.grid-text h2{
+    display: flex;
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.lista{
+    display: flex; 
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 40px;
+    color: white;
+    font-size: 22px;
+    height: 80%;
+    margin-left: 50px;
+    
+}
+
+
+
+.grid-inf{
+    grid-area: inf; 
+    overflow-x: auto;
+}
+
+.grid-potter__info{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: white;
+    font-family: 'Mynerve', cursive;
+    font-size: 30px;
+    background-color: rgb(17, 15, 48);
+    padding-left: 30px;
+}
+
+
+
+
+/*estilo RESPONSIVE*/
+
+@media screen and (max-width: 950px) {
+
+    /*Estilo y estructura del contenedor GRID RESPONSIVE*/
+    .grid-conteiner {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "main main"
+            "main main"
+            "main main"
+            "footer footer";
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 100vh;
+    }
+
+    /*bordes de las secciones GRID RESPONSIVE*/
+    .grid-item {
+        border: 1.5px solid rgb(0, 0, 0);
+    }
+
+
+    /* Estilo y estructura del HEADER RESPONSIVE*/
+    .grid-header {
+        grid-area: header;
+        background-color: rgb(17, 15, 48);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1px;
+        
+
+    }
+
+    /* Estilo del LOGO RESPONSIVE*/
+    .grid-header img {
+        height: 45%;
+        border-radius: 100px;
+        padding: 3px;
+        background-color: rgb(167, 163, 163);
+    }
+
+    /* Estilo de la barra de busqueda RESPONSIVE*/
+    .grid-item input {
+        
+        height: 30%;
+        width: 50%;
+        border: 3px solid rgb(95, 98, 99);
+        border-radius: 15px;
+        font-family: 'monserrat', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        
+    }
+
+    /* Estilo de "mi perfil", "mi lista" y "carrito" RESPONSIVE*/
+    .grid-item a {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        color: whitesmoke;
+        text-decoration: none;
+
+        text-shadow: 0px 10px 15px rgb(30, 7, 241);
+    }
+
+    /*FIN de estilo y estructura del HEADER RESPONSIVE*/
+
+
+
+    /*Estilo y estructura del NAV RESPONSIVE*/
+    .grid-nav {
+        grid-area: nav;
+        background-color: rgb(17, 15, 40);
+
+    }
+
+    /*Estilo del H3 "Categorias" RESPONSIVE*/
+    .grid-nav h3 {
+        color: rgb(235, 226, 226);
+        text-align: center;
+        font-size: xx-large;
+        font-weight: 700;
+        background-color: rgb(17, 15, 48);
+        margin: 0px;
+    }
+
+    /*Estilo de la lista ordenada RESPONSIVE*/
+    .grid-nav ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-content: start;
+        gap: 5px;
+        flex-wrap: wrap;
+        color: rgb(235, 226, 226);
+        font-size: 80%;
+        
+
+    }
+
+    /*Estilo de los elementos de la lista desordenada RESPONSIVE*/
+    .grid-nav li {
+        list-style: none;
+    }
+
+    /*Estilo de los iconos RESPONSIVE*/
+    .grid-nav span {
+        padding-right: 2px;
+    }
+
+    /*Colores de los iconos RESPONSIVE*/
+    .icon-binoculars {
+        color: green;
+    }
+
+    .icon-target {
+        color: orange;
+    }
+
+    .icon-fire {
+        color: orangered;
+    }
+
+    .icon-eye {
+        color: blue;
+    }
+
+    .icon-rocket {
+        color: aqua;
+    }
+
+    .icon-heart-broken {
+        color: red;
+    }
+
+    .icon-evil2 {
+        color: violet;
+    }
+
+    /*FIN estilo y estructura del NAV RESPONSIVE*/
+
+    /*Estilo y estructura del MAIN RESPONSIVE*/
+    .grid-main {
+        grid-area: main;
+        overflow: auto;
+
+    }
+    
+    /*Estilo de los libros RESPONSIVE*/
+    .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 3em;
+        margin-bottom: 3em;
+
+    }
+
+    /*Tamaño, borde y transicion de los libros RESPONSIVE*/
+    .grid-main img {
+        height: 300px;
+        width: 200px;
+        border: 1px solid grey;
+        transition: all .5s;
+    }
+
+    /*trasform de los libros RESPONSIVE*/
+    .images__imagen:hover {
+        transform: scale(1.1);
+    }
+
+    /*Fin estilos y elementos del MAIN*/
+
+    /*Estructura del FOOTER*/
+    .grid-footer {
+        grid-area: footer;
+        display: flex;
+        gap: 10%;
+        justify-content: space-around;
+        align-items: center;
+        grid-area: footer;
+        background-color: rgb(17, 15, 48);
+        
+    }
+    
+    /*colores de los iconos RESPONSIVE*/
+    .icon-facebook {
+        color: blue
+    }
+
+    .icon-instagram {
+        color: rgb(177, 52, 14);
+    }
+
+    .icon-whatsapp {
+        color: green;
+    }
+
+    /*FIN estructura del FOOTER*/
+}
+
+
