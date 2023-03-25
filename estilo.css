@@ -2,8 +2,8 @@
 body{
     margin: 0;
     background-image: url(https://i.pinimg.com/originals/97/57/93/975793fff4eb682dcc396c2885a13f2f.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: unset;
+    background-size: auto;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
@@ -218,12 +218,12 @@ body{
 .potter-conteiner{
     display: grid;
     grid-template-areas: 
-    "imag txt txt"
-    "imag txt txt"
-    "inf inf inf";
-    grid-auto-columns: 42% 1fr 1fr;
-    grid-auto-rows: 350px 350px 350px;
+    "imag txt"
+    "inf inf";
+    grid-auto-columns: 40% 1fr;
+    grid-auto-rows: 1fr 1fr;
     margin: 0px;
+    height: 100vh;
     
 }
 
@@ -233,6 +233,7 @@ body{
     display: flex;
     justify-content: end;
     padding: 10px;
+    height: 38em;
 }
 
 .grid-imag img{
@@ -275,14 +276,12 @@ body{
 /*area de la reseña del libro*/
 .grid-inf{
     grid-area: inf; 
-    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .grid-potter__info{
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    color: white;
+    
+     color: white;
     font-family: 'Mynerve', cursive;
     font-size: 30px;
     background-color: rgb(17, 15, 48);
@@ -503,3 +502,72 @@ body{
 
     /*FIN estructura del FOOTER*/
 
+    /*libro Harry Pooter RESPONSIVE*/
+
+    /*Main del libro Harry Potter RESPONSIVE*/
+    .potter-conteiner{
+        display: grid;
+        grid-template-areas: 
+        "imag imag"
+        "txt txt"
+        "inf inf";
+        grid-auto-columns: 40% 1fr;
+        grid-auto-rows: 1fr 1fr;
+        margin: 0px;
+        height: 100vh;
+        width: 95vw;
+    }
+
+    /*Area de la imagen del libro*/
+    .grid-imag{
+    grid-area: imag;
+    display: flex;
+    justify-content: center;
+    height: 30em;
+    width: 95vw;
+    }
+
+    /*area de la lista de informacion RESPONSIVE*/
+    .grid-text{
+        grid-area: txt;
+        
+    }
+
+    .grid-text h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        align-content: space-around;
+        color: white;
+    }
+
+    .lista{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-content: start;
+        gap: 20px;
+        flex-wrap: wrap;
+        font-size: 90%;
+        margin-left: 0px;
+    }
+
+    /*area de la reseña del libro*/
+    .grid-inf{
+        grid-area: inf; 
+        overflow-y: auto;
+        width: 101%;
+        
+    
+    }
+
+    .grid-potter__info{
+        color: white;
+        font-family: 'Mynerve', cursive;
+        font-size: 100%;
+        background-color: rgb(17, 15, 48);
+        
+    }
+    /* FIN area de la reseña del libro*/
+    
