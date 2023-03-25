@@ -72,10 +72,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
     color: whitesmoke;
     text-decoration: none;
-    
     text-shadow: 0px 10px 15px rgb(30, 7, 241);
 }
 
@@ -296,7 +294,7 @@ body{
 
 /*estilo RESPONSIVE*/
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1050px) {
 
     /*Estilo y estructura del contenedor GRID RESPONSIVE*/
     .grid-conteiner {
