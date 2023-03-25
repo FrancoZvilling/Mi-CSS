@@ -215,7 +215,7 @@ body{
 
 
 /*Main del libro Harry Potter*/
-.potter-conteiner{
+.libro-conteiner{
     display: grid;
     grid-template-areas: 
     "imag txt"
@@ -279,7 +279,7 @@ body{
     overflow-y: auto;
 }
 
-.grid-potter__info{
+.grid-libro__info{
     
      color: white;
     font-family: 'Mynerve', cursive;
@@ -505,7 +505,7 @@ body{
     /*libro Harry Pooter RESPONSIVE*/
 
     /*Main del libro Harry Potter RESPONSIVE*/
-    .potter-conteiner{
+    .libro-conteiner{
         display: grid;
         grid-template-areas: 
         "imag imag"
@@ -562,12 +562,26 @@ body{
     
     }
 
-    .grid-potter__info{
+    .grid-libro__info{
         color: white;
         font-family: 'Mynerve', cursive;
         font-size: 100%;
         background-color: rgb(17, 15, 48);
         
     }
-    /* FIN area de la reseña del libro*/
+    /* FIN area de la reseña del libro RESPONSIVE*/
+
+    /*FIN Main del libro Harry Potter*/
+
+
+
+
+
+
+
+
+
+
+
     
+}
