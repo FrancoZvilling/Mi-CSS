@@ -293,6 +293,7 @@ body{
 /*Formulario*/
   
   .form-signin {
+    opacity: 0.9;
     background-color: #e2dfdf;
     padding: 100px; 
     border-radius: 10px; 
