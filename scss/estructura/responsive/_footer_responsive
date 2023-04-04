@@ -1,0 +1,28 @@
+@media screen and (max-width: 1050px) {
+/*Estructura del FOOTER RESPONSIVE*/
+    .grid-footer {
+        grid-area: footer;
+        display: flex;
+        gap: 10%;
+        justify-content: space-around;
+        align-items: center;
+        grid-area: footer;
+        background-color: rgb(17, 15, 48);
+        
+    }
+    
+    /*colores de los iconos RESPONSIVE*/
+    .icon-facebook {
+        color: blue
+    }
+
+    .icon-instagram {
+        color: rgb(177, 52, 14);
+    }
+
+    .icon-whatsapp {
+        color: green;
+    }
+
+    /*FIN estructura del FOOTER RESPONSIVE*/
+}

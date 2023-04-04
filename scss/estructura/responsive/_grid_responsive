@@ -1,0 +1,25 @@
+@media screen and (max-width: 1050px) {
+
+    /*Estilo y estructura del contenedor GRID RESPONSIVE*/
+    .grid-conteiner {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "main main"
+            "main main"
+            "main main"
+            "footer footer";
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 100vh;
+    }
+
+    /*bordes de las secciones GRID RESPONSIVE*/
+    .grid-item {
+        border: 1.5px solid rgb(0, 0, 0);
+    }
+    /*FIN Estilo y estructura del contenedor GRID RESPONSIVE*/
+}

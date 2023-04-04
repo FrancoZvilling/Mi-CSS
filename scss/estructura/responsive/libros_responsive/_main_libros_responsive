@@ -1,0 +1,71 @@
+@media screen and (max-width: 1050px) {
+/*Main del libros RESPONSIVE*/
+    .libro-conteiner{
+        display: grid;
+        grid-template-areas: 
+        "imag imag"
+        "txt txt"
+        "inf inf";
+        grid-auto-columns: 40% 1fr;
+        grid-auto-rows: 1fr 1fr;
+        margin: 0px;
+        height: 100vh;
+        width: 95vw;
+    }
+
+    /*Area de la imagen del libro*/
+    .grid-imag{
+    grid-area: imag;
+    display: flex;
+    justify-content: center;
+    height: 30em;
+    width: 95vw;
+    }
+
+    /*area de la lista de informacion RESPONSIVE*/
+    .grid-text{
+        grid-area: txt;
+        
+        
+    }
+
+    .grid-text h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        align-content: space-around;
+        color: white;
+    }
+
+    .lista{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-content: start;
+        gap: 20px;
+        flex-wrap: wrap;
+        font-size: 90%;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    /*area de la reseña del libro*/
+    .grid-inf{
+        grid-area: inf; 
+        overflow-y: auto;
+        width: 101%;
+        
+    
+    }
+
+    .grid-libro__info{
+        color: white;
+        font-family: 'Mynerve', cursive;
+        font-size: 100%;
+        background-color: rgb(17, 15, 48);
+        
+    }
+    /* FIN area de la reseña del libro RESPONSIVE*/
+    /*FIN Main del libros*/
+}

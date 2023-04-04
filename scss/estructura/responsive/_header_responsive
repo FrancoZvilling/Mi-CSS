@@ -1,0 +1,47 @@
+@media screen and (max-width: 1050px) {
+/* Estilo y estructura del HEADER RESPONSIVE*/
+    .grid-header {
+        grid-area: header;
+        background-color: rgb(17, 15, 48);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1px;
+        
+
+    }
+
+    /* Estilo del LOGO RESPONSIVE*/
+    .grid-header img {
+        height: 45%;
+        border-radius: 100px;
+        padding: 3px;
+        background-color: rgb(167, 163, 163);
+    }
+
+    /* Estilo de la barra de busqueda RESPONSIVE*/
+    .grid-item input {
+        
+        height: 30%;
+        width: 50%;
+        border: 3px solid rgb(95, 98, 99);
+        border-radius: 15px;
+        font-family: 'monserrat', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        
+    }
+
+    /* Estilo de "mi perfil", "mi lista" y "carrito" RESPONSIVE*/
+    .grid-item a {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        color: whitesmoke;
+        text-decoration: none;
+        text-shadow: 0px 10px 15px rgb(30, 7, 241);
+    }
+
+    /*FIN de estilo y estructura del HEADER RESPONSIVE*/
+}

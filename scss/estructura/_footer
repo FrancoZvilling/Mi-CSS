@@ -1,0 +1,25 @@
+/*Estructura del FOOTER*/
+.grid-footer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20em;
+    grid-area: footer;
+    background-color: rgb(17, 15, 48);
+}
+
+/*Colores de los iconos*/
+.icon-facebook {
+    color:blue
+}
+
+.icon-instagram{
+    color: rgb(177, 52, 14);
+}
+
+.icon-whatsapp{
+    color: green;
+}
+
+/*FIN estructura del FOOTER*/

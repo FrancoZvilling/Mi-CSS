@@ -1,0 +1,75 @@
+
+@media screen and (max-width: 1050px) {
+/*Estilo y estructura del NAV RESPONSIVE*/
+    .grid-nav {
+        grid-area: nav;
+        background-color: rgb(17, 15, 40);
+
+    }
+
+    /*Estilo del H3 "Categorias" RESPONSIVE*/
+    .grid-nav h3 {
+        color: rgb(235, 226, 226);
+        text-align: center;
+        font-size: xx-large;
+        font-weight: 700;
+        background-color: rgb(17, 15, 48);
+        margin: 0px;
+    }
+
+    /*Estilo de la lista ordenada RESPONSIVE*/
+    .grid-nav ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-content: start;
+        gap: 5px;
+        flex-wrap: wrap;
+        color: rgb(235, 226, 226);
+        font-size: 80%;
+        
+        
+
+    }
+
+    /*Estilo de los elementos de la lista desordenada RESPONSIVE*/
+    .grid-nav li {
+        list-style: none;
+    }
+
+    /*Estilo de los iconos RESPONSIVE*/
+    .grid-nav span {
+        padding-right: 2px;
+    }
+
+    /*Colores de los iconos RESPONSIVE*/
+    .icon-binoculars {
+        color: green;
+    }
+
+    .icon-target {
+        color: orange;
+    }
+
+    .icon-fire {
+        color: orangered;
+    }
+
+    .icon-eye {
+        color: blue;
+    }
+
+    .icon-rocket {
+        color: aqua;
+    }
+
+    .icon-heart-broken {
+        color: red;
+    }
+
+    .icon-evil2 {
+        color: violet;
+    }
+
+    /*FIN estilo y estructura del NAV RESPONSIVE*/
+}

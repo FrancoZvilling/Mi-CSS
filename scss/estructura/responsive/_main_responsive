@@ -1,0 +1,35 @@
+@media screen and (max-width: 1050px) {
+    /*Estilo y estructura del MAIN RESPONSIVE*/
+    .grid-main {
+        grid-area: main;
+        overflow: auto;
+
+    }
+    
+    /*Estilo de los libros RESPONSIVE*/
+    .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 3em;
+        margin-bottom: 3em;
+
+    }
+
+    /*Tamaño, borde y transicion de los libros RESPONSIVE*/
+    .grid-main img {
+        height: 300px;
+        width: 200px;
+        border: 1px solid grey;
+        transition: all .5s;
+    }
+
+    /*trasform de los libros RESPONSIVE*/
+    .images__imagen:hover {
+        transform: scale(1.1);
+    }
+
+    /*Fin estilos y elementos del MAIN RESPONSIVE*/
+}

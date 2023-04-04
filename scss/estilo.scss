@@ -1,0 +1,40 @@
+/*Estilo del body*/
+body{
+    margin: 0;
+    background-image: url(https://i.pinimg.com/originals/97/57/93/975793fff4eb682dcc396c2885a13f2f.jpg);
+    background-repeat: unset;
+    background-size: auto;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    overflow-x: hidden;
+}
+
+
+/*pagina de inicio de sesion*/
+@import "./inicio_de_sesion/formulario";
+/*Estructura Grid de la página*/
+@import "./estructura/grid";
+/*Estructura Header de la página*/
+@import "./estructura/_header";
+/*Estructura Navegacion de la página*/
+@import "./estructura/_nav";
+/*Estructura Main de la página*/
+@import "./estructura/_main";
+/*Estructura Footer de la página*/
+@import "./estructura/_footer";
+/*Estructura Grid de los libros*/
+@import "./libros/_main_libros";
+
+/*RESPONSIVE*/
+/*Estructura Grid de la página RESPONSIVE*/
+@import "./estructura/responsive/_grid_responsive";
+/*Estructura Header de la página RESPONSIVE*/
+@import "./estructura/responsive/_header_responsive";
+/*Estructura Navegacion de la página RESPONSIVE*/
+@import "./estructura/responsive/_nav_responsive";
+/*Estructura Main de la página RESPONSIVE*/
+@import "./estructura/responsive/_main_responsive";
+/*Estructura Footer de la página RESPONSIVE*/
+@import "./estructura/responsive/_footer_responsive";
+/*Estructura Grid de los libros RESPONSIVE*/
+@import "./estructura/responsive/libros_responsive/_main_libros_responsive";

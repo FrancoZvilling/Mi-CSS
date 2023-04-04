@@ -1,0 +1,51 @@
+/* Estilo y estructura del HEADER*/
+.grid-header{
+    grid-area: header; 
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(17, 15, 48);
+    gap: 5em;
+    padding: 5px;
+     
+}
+
+/* Estilo del LOGO*/
+ .grid-header img{
+    height: 90%;
+    border-radius: 100px;
+    padding: 3px;
+    background-color: rgb(167, 163, 163);
+
+ }
+
+/* Estilo de la barra de busqueda*/
+ .grid-header input{
+     width: 1000px;
+     height: 30%;
+     border: 3px solid rgb(95, 98, 99);
+     border-radius: 15px;
+     margin: 5px;
+     padding-left: 30px;
+     font-family: 'monserrat', sans-serif;
+     font-weight: 700;
+     
+
+ }
+
+/* Estilo de "mi perfil", "mi lista" y "carrito"*/
+.grid-item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 0px 10px 15px rgb(30, 7, 241);
+}
+
+/*Estilo de los iconos de "mi perfil", "mi lista" y "carrito"*/
+.grid-item a span{
+    padding: 10px;
+}
+/*FIN de estilo y estructura del HEADER*/

@@ -1,0 +1,18 @@
+.form-signin {
+    opacity: 0.9;
+    background-color: #e2dfdf;
+    padding: 100px; 
+    border-radius: 10px; 
+    max-width: 400px; 
+    margin: auto; 
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  }
